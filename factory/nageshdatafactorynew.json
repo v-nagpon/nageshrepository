@@ -1,0 +1,9 @@
+{
+	"name": "nageshdatafactorynew",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ab8223c1-c568-4b94-82bb-431ef5fac180",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}
