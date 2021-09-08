@@ -1,0 +1,50 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "nageshdatafactorynew"
+		},
+		"AzureFileStorage1_connectionString": {
+			"value": ""
+		},
+		"ls_Blob_connectionString": {
+			"value": ""
+		},
+		"ls_adlsgen2_accountKey": {
+			"value": ""
+		},
+		"ls_adlsgen2_properties_typeProperties_url": {
+			"value": "https://nageshadls.dfs.core.windows.net"
+		},
+		"ls_http_properties_typeProperties_url": {
+			"value": "https://file-examples-com.github.io"
+		},
+		"Azure-SSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+			"value": "nageshsqlserver.database.windows.net"
+		},
+		"Azure-SSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName": {
+			"value": "v-nagpon"
+		},
+		"Azure-SSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
+			"value": ""
+		},
+		"AzureFileStorageprivateendpoint_properties_privateLinkResourceId": {
+			"value": "/subscriptions/6b0a72ea-ca4d-488d-87f1-c5e515a2a7f4/resourceGroups/Nagesh_RG/providers/Microsoft.Storage/storageAccounts/nageshsa"
+		},
+		"AzureFileStorageprivateendpoint_properties_groupId": {
+			"value": "file"
+		},
+		"AzureFileStorageprivateendpoint_properties_fqdns": {
+			"value": [
+				"nageshsa.file.core.windows.net"
+			]
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
