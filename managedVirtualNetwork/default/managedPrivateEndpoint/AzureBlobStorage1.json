@@ -1,0 +1,7 @@
+{
+	"name": "AzureBlobStorage1",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/6b0a72ea-ca4d-488d-87f1-c5e515a2a7f4/resourceGroups/Nagesh_RG/providers/Microsoft.Storage/storageAccounts/nageshsa",
+		"groupId": "blob"
+	}
+}
