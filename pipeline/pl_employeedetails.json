@@ -69,19 +69,10 @@
 				"typeProperties": {
 					"waitTimeInSeconds": 1
 				}
-			},
-			{
-				"name": "Execute Pipeline1",
-				"type": "ExecutePipeline",
-				"dependsOn": [],
-				"userProperties": [],
-				"typeProperties": {
-					"waitOnCompletion": true
-				}
 			}
 		],
 		"annotations": [],
-		"lastPublishTime": "2021-09-02T12:00:17Z"
+		"lastPublishTime": "2021-09-08T06:20:32Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }

@@ -1,0 +1,16 @@
+{
+	"name": "ls_sql",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=nageshsqlserver.database.windows.net;initial catalog=nageshsqldb;user id=v-nagpon",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIyYTI5Y2YwYS1hZjAwLTQyZjMtOWMyMC0yYjRmM2I4M2U1OGEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "IR-SHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
