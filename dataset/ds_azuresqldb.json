@@ -1,0 +1,56 @@
+{
+	"name": "ds_azuresqldb",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azuresqldb",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "country",
+				"type": "varchar"
+			},
+			{
+				"name": "country_code",
+				"type": "varchar"
+			},
+			{
+				"name": "continent",
+				"type": "varchar"
+			},
+			{
+				"name": "population",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "indicator",
+				"type": "varchar"
+			},
+			{
+				"name": "daily_count",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "DATE",
+				"type": "date"
+			},
+			{
+				"name": "RATE_14_DAY",
+				"type": "varchar"
+			},
+			{
+				"name": "SOURCE",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "hospital_admissions"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

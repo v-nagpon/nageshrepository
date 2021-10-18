@@ -2,15 +2,15 @@
 	"name": "ds_httpblob",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ls_adlsgen2",
+			"referenceName": "ls_Blob",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation",
-				"fileSystem": "httpdata"
+				"type": "AzureBlobStorageLocation",
+				"container": "input"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

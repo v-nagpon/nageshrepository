@@ -1,9 +1,9 @@
 {
-	"name": "pl_http to adls",
+	"name": "pl_BLOB_TO_SQLDB",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data from http to adls",
+				"name": "Copy data from blob to sqldb",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -18,25 +18,21 @@
 					"source": {
 						"type": "DelimitedTextSource",
 						"storeSettings": {
-							"type": "HttpReadSettings",
-							"requestMethod": "GET"
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
 						}
 					},
 					"sink": {
-						"type": "DelimitedTextSink",
-						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
-						},
-						"formatSettings": {
-							"type": "DelimitedTextWriteSettings",
-							"quoteAllText": true,
-							"fileExtension": ".csv"
-						}
+						"type": "AzureSqlSink",
+						"tableOption": "autoCreate",
+						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
+					"enableSkipIncompatibleRow": true,
 					"translator": {
 						"type": "TabularTranslator",
 						"typeConversion": true,
@@ -48,20 +44,20 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_http",
+						"referenceName": "ds_blobnewdataset",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "ds_httpblob",
+						"referenceName": "ds_azuresqldb",
 						"type": "DatasetReference"
 					}
 				]
 			}
 		],
 		"annotations": [],
-		"lastPublishTime": "2021-09-23T12:40:33Z"
+		"lastPublishTime": "2021-09-30T12:21:32Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }

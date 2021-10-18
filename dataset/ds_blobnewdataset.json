@@ -1,16 +1,17 @@
 {
-	"name": "ds_http",
+	"name": "ds_blobnewdataset",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ls_http",
+			"referenceName": "ls_Blob",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation",
-				"relativeUrl": "v-nagpon/nageshrepository/blob/main/Testfile.txt"
+				"type": "AzureBlobStorageLocation",
+				"fileName": "hospital_admissions.csv",
+				"container": "input"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

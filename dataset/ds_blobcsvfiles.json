@@ -1,16 +1,16 @@
 {
-	"name": "ds_http",
+	"name": "ds_blobcsvfiles",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ls_http",
+			"referenceName": "ls_Blob",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation",
-				"relativeUrl": "v-nagpon/nageshrepository/blob/main/Testfile.txt"
+				"type": "AzureBlobStorageLocation",
+				"container": "input"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
